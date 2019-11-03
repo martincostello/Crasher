@@ -1,8 +1,8 @@
 # Crasher
 
-A simple .NET Core 2.2 console application for testing crash handling.
+A simple .NET Core 3.0 console application for testing crash handling.
 
-To produce a crash, simply run the following commands with a .NET Core 2.2.x SDK installed:
+To produce a crash, simply run the following commands with a .NET Core 3.0.x SDK installed:
 
 ```cmd
 > git clone https://github.com/martincostello/Crasher.git
@@ -12,6 +12,22 @@ To produce a crash, simply run the following commands with a .NET Core 2.2.x SDK
 Process is terminating due to StackOverflowException.
 
 >
+```
+
+For portability on other machines, run the following commands:
+
+```cmd
+> git clone https://github.com/martincostello/Crasher.git
+> cd Crasher
+> dotnet publish
+```
+
+The default [runtime identifier](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog) is `win-x64`. To use another RID, use the `--runtime` flag; for example:
+
+```cmd
+> git clone https://github.com/martincostello/Crasher.git
+> cd Crasher
+> dotnet publish --runtime linux-x64
 ```
 
 ## Feedback

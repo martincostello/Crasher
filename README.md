@@ -1,8 +1,8 @@
 # Crasher
 
-A simple .NET Core 3.0 console application for testing crash handling.
+A simple .NET Core 3.1 console application for testing crash handling.
 
-To produce a crash, simply run the following commands with a .NET Core 3.0.x SDK installed:
+To produce a crash, simply run the following commands with a .NET Core 3.1.x SDK installed:
 
 ```cmd
 > git clone https://github.com/martincostello/Crasher.git
